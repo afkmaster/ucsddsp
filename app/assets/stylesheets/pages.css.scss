@@ -1,0 +1,244 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//ORDER OF SHIT TOP RIGHT BOTTOM LEFT
+$bannerColor: #272323;
+$textColor: #3267A0;
+$mainTextColor: #7AA0BD;
+$backgroundColor: #C8C8C8;
+
+body { 
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #272323 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #272323 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #FFFFFF), color-stop(1, #272323));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #272323 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: radial-gradient(circle farthest-corner at center, #FFFFFF 0%, #272323 100%);
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}
+
+@mixin boxRadius {
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+@mixin linkmagic {
+	margin: 5px;
+	@include shadow;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	text-indent: -9999px;
+	a:link { 
+		text-decoration: none;
+	}
+	a:visited { 
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	&:hover {
+		text-indent: 0;
+	}	
+}
+
+@keyframes imageSlide {
+	0% { left: 0px; }
+	50% { left: 45px; }
+	100% { left: -45px }
+}
+
+@-moz-keyframes imageSlide {
+	0% { left: 0px; }
+	50% { left: 45px;}
+	100% { left: -45px }
+}
+
+@-webkit-keyframes imageSlide {
+	0% { left: 0px; }
+	50% { left: 45px; }
+	100% { left: -45px }
+}
+
+.boxIt {
+	@include boxRadius;
+	height: 145px;
+	width: 145px;
+	margin: 17px;
+	text-align: center;
+	color: $textColor;
+	font-family: Mission Script;
+	font-size: 24px;
+	background-color: $bannerColor;
+	transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+	a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		text-decoration: none;
+		color: $textColor;
+	}
+	&:hover {
+		transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+	}
+	.homeImage {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		top: 10px;
+	}
+	.homeLabel {
+		position: relative;
+		bottom: 30px;
+	}
+	.chapterLabel1 {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		font-size: 45px;
+		top: 40px;
+	}
+	.chapterLabel2 {
+		position: relative;
+		bottom: 35px;
+	}
+	.brothersImage {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		top: 10px;
+	}
+	.brothersLabel {
+		position: relative;
+		bottom: 30px;
+	}
+	.alumniImage {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		top: 15px;
+	}
+	.alumniLabel {
+		position: relative;
+		bottom: 30px;
+	}
+	.recruitmentImage {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		top: 10px;
+	}
+	.recruitmentLabel {
+		position: relative;
+		bottom: 30px;
+	}
+	.contactImage {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		top: 20px;
+	}
+	.contactLabel {
+		position: relative;
+		bottom: 30px;
+	}
+}
+.mainText {
+	@include boxRadius;
+	background-color: rgba(122, 160, 189, .5);
+	border: 10px solid rgba(122, 160, 189, .005);
+	width: 35%;
+	height: 400px;
+	margin: 75px auto 0px auto;
+	display: block;
+	word-wrap: break-word;
+	overflow: auto;
+	text-align: center;
+	.textBox {
+		margin: 30px;
+		padding-bottom: 5px;
+	}
+}
+
+.listLeft {
+	float: left;
+	margin: 25px 0 0px 200px;
+	.chapter {
+		position: relative;
+		right: 100px;
+	}
+}
+
+.listRight {
+	float: right;
+	margin: 25px 200px 0px 0px;
+	.recruitment {
+		position: relative;
+		left: 100px;
+	}
+}
+
+.floatClear {
+	clear: both;
+}
+
+.alumniText, .brothersText, .chapterText, .contactText, .recruitmentText {
+	display: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.sideBar {
+	@include boxRadius;
+	margin: 300px 0 50px 75px;
+	display: block;
+	width: 20%;
+	height: 650px;
+	text-align: left;
+	padding: 50px 0 0 0;
+	float: left;
+	background: $bannerColor;
+	a {
+		text-decoration: none;
+	}
+	ul {
+		margin: 0 0 0 50px;
+	}
+}
+.centerText {
+	@include boxRadius;
+	display: block;
+	float: right;
+	margin: 300px 75px 0 0;
+	width: 65%;
+	height: 650px;
+	padding: 0 0 50px 0;
+	background: $bannerColor;
+	a {
+		text-decoration: none;
+	}
+	.textBox {
+		color: white;
+		margin: 50px;
+	}
+}
+
+.mainContainer{
+	width: 100%;
+	overflow: hidden;
+}
