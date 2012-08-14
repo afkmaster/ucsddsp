@@ -8,25 +8,29 @@ header {
 	color: white;
 	background: $bannerColor;
 	height: 8em;
-	.name {
-		font-family: Symbol;
-		float: left;
-		margin: 50px 0 0 2em;
-		font-size: 85px;
-	}
-	.full.name {
-		margin: 9px 0 0 15px;
-		font-size: 1em;
-		.top {
-			font-family: Ingleby;
-			color: $textColor;
-			margin: 20px 0 0 0;
-			font-size: 45px;
+	.headerContainer {
+		border: 1px solid red;
+		padding-top: 50px;
+		.name {
+			//line-height: normal;
+			font-family: Symbol;
+			float: left;
+			margin: 0 0 0 2em;
+			font-size: 85px;
 		}
-		.bottom {
-			font-family: Mission Script;
-			margin: 15px 0 0 0;
-			font-size: 20px;
+		.full.name {
+			.top {
+				font-family: Ingleby;
+				color: $textColor;
+				font-size: 45px;
+			}
+			.bottom {
+				font-family: Mission Script;
+				font-size: 20px;
+			}
+		}
+		.clear {
+			clear: both;
 		}
 	}
 }
