@@ -1,35 +1,39 @@
-@import "bootstrap";
+//@import "bootstrap";
 
 //ORDER OF SHIT TOP RIGHT BOTTOM LEFT
 $bannerColor: #272323;
 $textColor: #3267A0;
 
-header {
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.headerContainer {
 	color: white;
 	background: $bannerColor;
-	height: 8em;
-	.headerContainer {
-		line-height: normal;
-		.name {
-			font-family: Symbol;
-			float: left;
-			margin: 15px 0 0 2em;
-			font-size: 85px;
+	height: 100%;
+	.name {
+		font-family: Symbol;
+		float: left;
+		margin: 13px 0px 0px 1.5em;
+		font-size: 85px;
+	}
+	.dspName {
+		margin: 8px 0px 0px 20px;
+		float: left;
+		.top {
+			font-family: Ingleby;
+			color: $textColor;
+			font-size: 40px;
 		}
-		.full.name {
-			margin: 15px 0 0 25px;
-			.top {
-				font-family: Ingleby;
-				color: $textColor;
-				font-size: 45px;
-			}
-			.bottom {
-				font-family: Mission Script;
-				font-size: 20px;
-			}
+		.bottom {
+			padding-top: 3px;
+			font-family: Mission Script;
+			font-size: 15px;
 		}
-		.clear {
-			clear: both;
-		}
+	}
+	.clear {
+		clear: both;
 	}
 }

@@ -9,6 +9,8 @@ $mainTextColor: #7AA0BD;
 $backgroundColor: #C8C8C8;
 
 body { 
+	margin: 0;
+	padding: 0;
 	/* IE10 Consumer Preview */ 
 	background-image: -ms-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #272323 100%);
 	/* Mozilla Firefox */ 
@@ -28,27 +30,6 @@ body {
 	border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
-}
-
-@mixin linkmagic {
-	margin: 5px;
-	@include shadow;
-	width: 50px;
-	height: 50px;
-	text-align: center;
-	text-indent: -9999px;
-	a:link { 
-		text-decoration: none;
-	}
-	a:visited { 
-		text-decoration: none;
-	}
-	a:hover {
-		text-decoration: none;
-	}
-	&:hover {
-		text-indent: 0;
-	}	
 }
 
 @keyframes imageSlide {
@@ -71,19 +52,19 @@ body {
 
 .boxIt {
 	@include boxRadius;
-	height: 145px;
-	width: 145px;
-	margin: 17px;
+	height: 147px;
+	width: 147px;
+	margin-top: 17px;
 	text-align: center;
 	color: $textColor;
 	font-family: Mission Script;
 	font-size: 24px;
 	background-color: $bannerColor;
-	transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-webkit-transition: .5s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
 	a {
-		display: block;
 		height: 100%;
 		width: 100%;
 		text-decoration: none;
@@ -98,10 +79,11 @@ body {
 		position: relative;
 		height: 100%;
 		width: 100%;
-		top: 10px;
 	}
 	.homeLabel {
 		position: relative;
+		height: 100%;
+		width: 100%;
 		bottom: 30px;
 	}
 	.chapterLabel1 {
@@ -109,10 +91,11 @@ body {
 		height: 100%;
 		width: 100%;
 		font-size: 45px;
-		top: 40px;
 	}
 	.chapterLabel2 {
 		position: relative;
+		height: 100%;
+		width: 100%;
 		bottom: 35px;
 	}
 	.brothersImage {
@@ -168,14 +151,21 @@ body {
 	overflow: auto;
 	text-align: center;
 	.textBox {
-		margin: 30px;
+		margin: 25px;
 		padding-bottom: 5px;
 	}
 }
 
+ul {
+	list-style: none;
+}
+
 .listLeft {
 	float: left;
-	margin: 25px 0 0px 200px;
+	margin: 25px 0px 0px 180px;
+	li {
+		margin-left: -40px;
+	}
 	.chapter {
 		position: relative;
 		right: 100px;
@@ -184,23 +174,18 @@ body {
 
 .listRight {
 	float: right;
-	margin: 25px 200px 0px 0px;
+	margin: 25px 180px 0px 0px;
+	li {
+		margin-left: -40px;
+	}
 	.recruitment {
 		position: relative;
 		left: 100px;
 	}
 }
 
-.floatClear {
-	clear: both;
-}
-
 .alumniText, .brothersText, .chapterText, .contactText, .recruitmentText {
 	display: none;
-}
-
-ul {
-	list-style: none;
 }
 
 .sideBar {

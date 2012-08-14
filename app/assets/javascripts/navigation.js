@@ -54,7 +54,7 @@ $(document).ready(function() {
 					$(pageIds[currentPage]).css("position", "relative");
 					$(pageIds[currentPage]).css("overflow", "hidden");
 					$(pageIds[currentPage]).animate({
-						right: "+=5000px"}, 500, redirectPage );
+						left: "-=5000px"}, 500, redirectPage );
 				}
 				else
 				{
