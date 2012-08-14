@@ -27,7 +27,7 @@ end
 
 gem 'annotate', '2.5.0', group: :development
 
-gem 'jquery-rails', '2.0.0'
+gem 'jquery-rails'
 
 group :production do
   gem 'pg', '0.12.2'
