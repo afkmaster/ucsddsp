@@ -9,16 +9,15 @@ header {
 	background: $bannerColor;
 	height: 8em;
 	.headerContainer {
-		border: 1px solid red;
-		padding-top: 50px;
+		line-height: normal;
 		.name {
-			//line-height: normal;
 			font-family: Symbol;
 			float: left;
-			margin: 0 0 0 2em;
+			margin: 15px 0 0 2em;
 			font-size: 85px;
 		}
 		.full.name {
+			margin: 15px 0 0 25px;
 			.top {
 				font-family: Ingleby;
 				color: $textColor;
