@@ -148,7 +148,8 @@ body {
 	width: 450px;
 	height: 400px;
 	top: 50px;
-	margin: 0px auto 0px auto;
+	float: left;
+	//margin: 0px auto 0px auto;
 	display: block;
 	word-wrap: break-word;
 	overflow: auto;
@@ -173,7 +174,7 @@ body {
 	}
 
 	.listRight {
-		float: right;
+		float: left;
 		width: 150px;
 		.recruitment {
 			position: relative;
