@@ -21,9 +21,9 @@ body {
 	background-image: -webkit-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #272323 100%);
 	/* W3C Markup, IE10 Release Preview */ 
 	background-image: radial-gradient(circle farthest-corner at center, #FFFFFF 0%, #272323 100%);
-	background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
+	background-size: 100%;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
 }
 
 @mixin boxRadius {
@@ -139,49 +139,52 @@ body {
 		bottom: 30px;
 	}
 }
+
 .mainText {
 	@include boxRadius;
+	position: relative;
 	background-color: rgba(122, 160, 189, .5);
 	border: 10px solid rgba(122, 160, 189, .005);
 	width: 35%;
 	height: 400px;
-	margin: 75px auto 0px auto;
+	top: 50px;
+	margin: 0px auto 0px auto;
 	display: block;
 	word-wrap: break-word;
 	overflow: auto;
 	text-align: center;
 	.textBox {
-		margin: 25px;
+		margin: 20px;
 		padding-bottom: 5px;
+	}
+}
+
+.superContainer {
+	margin: 0px auto 0px auto;
+	height: 550px;
+	width: 1100px;
+	.listLeft {
+		float: left;
+		margin: 0px 0px 0px 180px;
+		.chapter {
+			position: relative;
+			right: 100px;
+		}
+	}
+
+	.listRight {
+		float: right;
+		margin: 0px 180px 0px 0px;
+		.recruitment {
+			position: relative;
+			left: 100px;
+		}
 	}
 }
 
 ul {
 	list-style: none;
-}
-
-.listLeft {
-	float: left;
-	margin: 25px 0px 0px 180px;
-	li {
-		margin-left: -40px;
-	}
-	.chapter {
-		position: relative;
-		right: 100px;
-	}
-}
-
-.listRight {
-	float: right;
-	margin: 25px 180px 0px 0px;
-	li {
-		margin-left: -40px;
-	}
-	.recruitment {
-		position: relative;
-		left: 100px;
-	}
+	margin: 0px;
 }
 
 .alumniText, .brothersText, .chapterText, .contactText, .recruitmentText {
