@@ -7,27 +7,24 @@ var currentPage;
 var newPage;
 
 $(document).ready(function() {
-	//alert(window.name);
-	/*
 	currentPage = pageValue[location.href.split('/').pop()];
-	if (window.name == "1") 
+	if (document.cookie == "1") 
 		{
 			$(pageIds[currentPage]).css("position", "relative");
 			$(pageIds[currentPage]).css("overflow", "hidden");
 			$(pageIds[currentPage]).css("left", "5000px");
 			$(pageIds[currentPage]).animate({ left: "-=5000px"}, 500 );
 		}
-	else if (window.name == "2")
+	else if (document.cookie == "2")
 		{
 			$(pageIds[currentPage]).css("position", "relative");
 			$(pageIds[currentPage]).css("overflow", "hidden");
 			$(pageIds[currentPage]).css("right", "5000px");
 			$(pageIds[currentPage]).animate({ right: "-=5000px"}, 500 );
 		}
-	*/
 
 	$('.navigation').mouseover(function() {
-		window.name = 0;
+		document.cookie = 0;
 		lastNav = currentNav;
 		currentNav = $(this).attr('id');
 		if (lastNav != currentNav) {
@@ -42,11 +39,11 @@ $(document).ready(function() {
 		newPage = $(this).attr('id');
 		if (currentPage < newPage)
 		{
-			//window.name = 1;
+			document.cookie = 1;
 		}
 		else
 		{
-			//window.name = 2;
+			document.cookie = 2;
 		}
 	})
 	$('.pageSlide').click(function (event) {
