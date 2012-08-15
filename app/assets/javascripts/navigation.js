@@ -7,6 +7,8 @@ var currentPage;
 var newPage;
 
 $(document).ready(function() {
+	//alert(window.name);
+	/*
 	currentPage = pageValue[location.href.split('/').pop()];
 	if (window.name == "1") 
 		{
@@ -22,7 +24,7 @@ $(document).ready(function() {
 			$(pageIds[currentPage]).css("right", "5000px");
 			$(pageIds[currentPage]).animate({ right: "-=5000px"}, 500 );
 		}
-
+	*/
 
 	$('.navigation').mouseover(function() {
 		window.name = 0;
@@ -32,13 +34,20 @@ $(document).ready(function() {
 			$(divIds[lastNav]).fadeOut(200, function() { 
 				$(divIds[currentNav]).fadeIn(200)
 			});
-			//$(divIds[lastNav]).css("display", "none");
-			//$(divIds[currentNav]).css("display", "block");
 		}
 		
 	});
 	$('.pageSlide').mouseover(function () {
 		currentPage = pageValue[location.href.split('/').pop()];
+		newPage = $(this).attr('id');
+		if (currentPage < newPage)
+		{
+			//window.name = 1;
+		}
+		else
+		{
+			//window.name = 2;
+		}
 	})
 	$('.pageSlide').click(function (event) {
 		event.preventDefault();
@@ -50,7 +59,6 @@ $(document).ready(function() {
 			{
 				if (currentPage < newPage) 
 				{
-					window.name = 1;
 					$(pageIds[currentPage]).css("position", "relative");
 					$(pageIds[currentPage]).css("overflow", "hidden");
 					$(pageIds[currentPage]).animate({
@@ -58,7 +66,6 @@ $(document).ready(function() {
 				}
 				else
 				{
-					window.name = 2;
 					$(pageIds[currentPage]).css("position", "relative");
 					$(pageIds[currentPage]).css("overflow", "hidden");
 					$(pageIds[currentPage]).animate({
