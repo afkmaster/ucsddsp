@@ -145,7 +145,7 @@ body {
 	position: relative;
 	background-color: rgba(122, 160, 189, .5);
 	border: 10px solid rgba(122, 160, 189, .005);
-	width: 35%;
+	width: 55%;
 	height: 400px;
 	top: 50px;
 	margin: 0px auto 0px auto;
@@ -154,32 +154,30 @@ body {
 	overflow: auto;
 	text-align: center;
 	.textBox {
-		margin: 20px;
+		margin: 5px;
 		padding-bottom: 5px;
 	}
 }
 
 .superContainer {
 	margin: 0px auto 0px auto;
-	height: 550px;
-	width: 1100px;
+	height: 500px;
+	width: 800px;
 	.listLeft {
 		float: left;
 		width: 150px;
-		margin: 0px 0px 0px 150px;
 		.chapter {
 			position: relative;
-			right: 100px;
+			right: 75px;
 		}
 	}
 
 	.listRight {
 		float: right;
 		width: 150px;
-		margin: 0px 150px 0px 0px;
 		.recruitment {
 			position: relative;
-			left: 100px;
+			left: 75px;
 		}
 	}
 }
@@ -193,14 +191,23 @@ ul {
 	display: none;
 }
 
+.mainContainer {
+	width: 100%;
+	overflow: hidden;
+	.alumniBox, .brothersBox, .chapterBox, .contactBox, .recruitmentBox {
+		height: 700px;
+		width: 1050px;
+		margin: 300px auto 50px auto;
+		overflow: hidden;
+	}
+}
+
 #sideBar {
 	@include boxRadius;
-	margin: 300px 0 50px 75px;
 	display: block;
 	width: 20%;
-	height: 650px;
+	height: 100%;
 	text-align: left;
-	padding: 50px 0 0 0;
 	float: left;
 	background: $bannerColor;
 	a {
@@ -210,18 +217,17 @@ ul {
 	a:visited { text-decoration: none; color: $textColor; }
 	a:hover { text-decoration: none; color: $textColor; }
 	a:active { text-decoration: none; color: $textColor; }
-	ul {
-		margin: 0 0 0 50px;
+	.sideList {
+		width: 50%;
+		margin: 25px auto 0px auto;
 	}
 }
 .centerText {
 	@include boxRadius;
 	display: block;
 	float: right;
-	margin: 300px 100px 0 0;
-	width: 65%;
-	height: 650px;
-	padding: 0 0 50px 0;
+	width: 78%;
+	height: 100%;
 	background: $bannerColor;
 	a {
 		text-decoration: none;
@@ -230,9 +236,4 @@ ul {
 		color: white;
 		margin: 50px;
 	}
-}
-
-.mainContainer{
-	width: 100%;
-	overflow: hidden;
 }
