@@ -11,6 +11,7 @@ $backgroundColor: #C8C8C8;
 body { 
 	margin: 0;
 	padding: 0;
+	-webkit-padding-start: 0px;
 	/* IE10 Consumer Preview */ 
 	background-image: -ms-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #272323 100%);
 	/* Mozilla Firefox */ 
@@ -148,8 +149,7 @@ body {
 	width: 450px;
 	height: 400px;
 	top: 50px;
-	float: left;
-	//margin: 0px auto 0px auto;
+	margin: 0px auto 0px auto;
 	display: block;
 	word-wrap: break-word;
 	overflow: auto;
@@ -163,7 +163,7 @@ body {
 .superContainer {
 	margin: 0px auto 0px auto;
 	height: 500px;
-	width: 800px;
+	width: 850px;
 	.listLeft {
 		float: left;
 		width: 150px;
@@ -174,7 +174,7 @@ body {
 	}
 
 	.listRight {
-		float: left;
+		float: right;
 		width: 150px;
 		.recruitment {
 			position: relative;
