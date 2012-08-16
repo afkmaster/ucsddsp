@@ -7,13 +7,6 @@ var currentPage;
 var newPage;
 
 $(document).ready(function() {
-	$('.imageGallery img:first').fadeIn(1000, function() {
-		$('.imageGallery').cycle({
-			fx: 'fade',
-			speed: 3000
-		});
-	});
-
 	currentPage = pageValue[location.href.split('/').pop()];
 	if (document.cookie == "1") 
 		{
@@ -30,6 +23,14 @@ $(document).ready(function() {
 			$(pageIds[currentPage]).animate({ right: "-=5000px"}, 500 );
 		}
 	document.cookie = 0;
+
+	$('.imageGallery img:first').fadeIn(1000, function() {
+		$('.imageGallery').cycle({
+			fx: 'fade',
+			speed: 3000
+		});
+	});
+	
 	$('.navigation').mouseover(function() {
 		document.cookie = 0;
 		lastNav = currentNav;
