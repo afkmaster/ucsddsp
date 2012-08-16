@@ -4,6 +4,7 @@
 
 //ORDER OF SHIT TOP RIGHT BOTTOM LEFT
 $textColor: #3267A0;
+$boxColor: #252221;
 $mainTextColor: #7AA0BD;
 $textBoxColor: #A0B3C2;
 
@@ -59,7 +60,7 @@ body {
 	text-align: center;
 	color: $textColor;
 	font-family: Mission Script;
-	background-color: $bannerColor;
+	background-color: $boxColor;
 	transition: .3s ease-in-out;
 	-moz-transition: .3s ease-in-out;
 	-webkit-transition: .3s ease-in-out;
@@ -161,6 +162,10 @@ body {
 		width: 518px;
 		top: 30px;
 		right: 23px;
+		img {
+			height: 143px;
+			width: 518px;
+		}
 	}
 }
 
@@ -191,7 +196,7 @@ ul {
 	height: 100%;
 	text-align: left;
 	float: left;
-	background: $bannerColor;
+	background: $boxColor;
 	a {
 		text-decoration: none;
 	}
@@ -210,7 +215,7 @@ ul {
 	float: right;
 	width: 820px;
 	height: 100%;
-	background: $bannerColor;
+	background: $boxColor;
 	a {
 		text-decoration: none;
 	}
