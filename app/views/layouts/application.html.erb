@@ -9,7 +9,9 @@
   <%= render 'layouts/header' %>
 </head>
 <body>
-<%= yield %>
-
+	<div class="notice">
+		<%= notice %>
+	</div>
+	<%= yield %>
 </body>
 </html>

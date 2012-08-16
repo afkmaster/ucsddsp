@@ -10,31 +10,7 @@ body {
 }
 
 .headerContainer {
-	color: white;
 	background: $bannerColor;
-	height: 100px;
-	line-height: normal;
-	.name {
-		font-family: Symbol;
-		float: left;
-		margin: auto 0px auto 1.5em;
-		font-size: 85px;
-	}
-	.dspName {
-		margin: 8px 0px 0px 20px;
-		float: left;
-		.top {
-			font-family: Ingleby;
-			color: $textColor;
-			font-size: 40px;
-		}
-		.bottom {
-			padding-top: 3px;
-			font-family: Mission Script;
-			font-size: 15px;
-		}
-	}
-	.clear {
-		clear: both;
-	}
+	height: 100%;
+	text-align: center;
 }

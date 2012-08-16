@@ -3,10 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //ORDER OF SHIT TOP RIGHT BOTTOM LEFT
-$bannerColor: #272323;
 $textColor: #3267A0;
 $mainTextColor: #7AA0BD;
-$backgroundColor: #C8C8C8;
+$textBoxColor: #A0B3C2;
 
 body { 
 	margin: 0;
@@ -55,19 +54,16 @@ body {
 	@include boxRadius;
 	height: 147px;
 	width: 147px;
-	margin-top: 17px;
+	margin: 13px;
+	margin-top: 28px;
 	text-align: center;
 	color: $textColor;
 	font-family: Mission Script;
-	font-size: 24px;
 	background-color: $bannerColor;
-	-webkit-backface-visibility: hidden;
 	transition: .3s ease-in-out;
 	-moz-transition: .3s ease-in-out;
 	-webkit-transition: .3s ease-in-out;
 	a {
-		height: 100%;
-		width: 100%;
 		text-decoration: none;
 		color: $textColor;
 	}
@@ -79,107 +75,92 @@ body {
 	.homeImage {
 		position: relative;
 		height: 100%;
-		width: 100%;
+		top: 15px;
 	}
-	.homeLabel {
+	.chapterImage {
 		position: relative;
 		height: 100%;
-		width: 100%;
-		bottom: 30px;
-	}
-	.chapterLabel1 {
-		position: relative;
-		height: 100%;
-		width: 100%;
-		font-size: 45px;
-	}
-	.chapterLabel2 {
-		position: relative;
-		height: 100%;
-		width: 100%;
-		bottom: 35px;
+		top: 25px;
 	}
 	.brothersImage {
 		position: relative;
 		height: 100%;
-		width: 100%;
 		top: 10px;
-	}
-	.brothersLabel {
-		position: relative;
-		bottom: 30px;
 	}
 	.alumniImage {
 		position: relative;
 		height: 100%;
-		width: 100%;
-		top: 15px;
-	}
-	.alumniLabel {
-		position: relative;
-		bottom: 30px;
 	}
 	.recruitmentImage {
 		position: relative;
 		height: 100%;
-		width: 100%;
 		top: 10px;
-	}
-	.recruitmentLabel {
-		position: relative;
-		bottom: 30px;
 	}
 	.contactImage {
 		position: relative;
 		height: 100%;
-		width: 100%;
 		top: 20px;
-	}
-	.contactLabel {
-		position: relative;
-		bottom: 30px;
-	}
-}
-
-.mainText {
-	@include boxRadius;
-	position: relative;
-	background-color: rgba(122, 160, 189, .5);
-	border: 10px solid rgba(122, 160, 189, .005);
-	width: 450px;
-	height: 400px;
-	top: 50px;
-	margin: 0px auto 0px auto;
-	display: block;
-	word-wrap: break-word;
-	overflow: auto;
-	text-align: center;
-	.textBox {
-		margin: 5px;
-		padding-bottom: 5px;
 	}
 }
 
 .superContainer {
-	margin: 0px auto 0px auto;
-	height: 500px;
-	width: 850px;
+	margin: 0px auto;
+	//border: 1px solid blue;
+	position: relative;
+	right: 50px;
+	height: 530px;
+	width: 900px;
+	text-align: center;
 	.listLeft {
 		float: left;
-		width: 150px;
-		.chapter {
-			position: relative;
-			right: 75px;
-		}
 	}
 
 	.listRight {
-		float: right;
-		width: 150px;
-		.recruitment {
-			position: relative;
-			left: 75px;
+		float: left;
+	}
+	.textContainer {
+		height: 323px;
+		width: 550px;
+		position: relative;
+		margin-top: 200px;
+		float: left;
+		.mainText {
+			@include boxRadius;
+			position: absolute;
+			bottom: 0px;
+			right: 295px;
+			background-color: $textBoxColor;
+			border: 10px solid $textBoxColor;
+			height: 303px;
+			width: 225px;
+			display: block;
+			word-wrap: break-word;
+			overflow: auto;
+			text-align: center;
 		}
+		.calendar {
+			@include boxRadius;
+			position: absolute;
+			bottom: 0px;
+			right: 20px;
+			background-color: $textBoxColor;
+			border: 10px solid $textBoxColor;
+			height: 303px;
+			width: 225px;
+			display: block;
+			word-wrap: break-word;
+			overflow: auto;
+		}
+	}
+	.textBox {
+		margin: 5px;
+	}
+	.imageGallery {
+		position: absolute;
+		height: 143px;
+		width: 518px;
+		top: 30px;
+		right: 23px;
 	}
 }
 
@@ -237,4 +218,15 @@ ul {
 		color: white;
 		margin: 50px;
 	}
+	label {
+		color: white;
+	}
+}
+.notice {
+	color: red;
+	text-align: center;
+}
+input, textarea, select, .uneditable-input {
+	width: 100%;
+	height: auto;
 }

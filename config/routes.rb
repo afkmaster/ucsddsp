@@ -1,11 +1,15 @@
 Ucsddsp::Application.routes.draw do
-
   root to: 'pages#home'
+  resources :messages
+
   match '/chapter', to: 'pages#chapter'
   match '/brothers', to: 'pages#brothers'
   match '/alumni', to: 'pages#alumni'
   match '/recruitment', to: 'pages#recruitment'
-  match '/contact', to: 'pages#contact'
+  #match '/contact', to: 'pages#contact'
+
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
 
   #get "pages/chapter"
   #get "pages/brothers"
