@@ -59,6 +59,7 @@ $(document).ready(function() {
 					document.cookie = 1;
 					$(pageIds[currentPage]).css("position", "relative");
 					$(pageIds[currentPage]).css("overflow", "hidden");
+					$('.notice').fadeOut(200);
 					$(pageIds[currentPage]).animate({
 						left: "-=5000px"}, 500, redirectPage );
 				}
@@ -67,6 +68,7 @@ $(document).ready(function() {
 					document.cookie = 2;
 					$(pageIds[currentPage]).css("position", "relative");
 					$(pageIds[currentPage]).css("overflow", "hidden");
+					$('.notice').fadeOut(200);
 					$(pageIds[currentPage]).animate({
 						left: "+=5000px"}, 500, redirectPage );
 				}

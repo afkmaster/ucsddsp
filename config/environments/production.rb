@@ -9,8 +9,8 @@ Ucsddsp::Application.configure do
     :address => "smtp.gmail.com",
     :port => 587,
     :domain => "gmail.com",
-    :user_name => "jchan621@gmail.com",
-    :password => "calbears2012",
+    :user_name => "andykim90@gmail.com",
+    :password => "Hyungon1",
     :authentication => :plain,
     :enable_starttls_auto => true
   }
@@ -34,7 +34,7 @@ Ucsddsp::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true

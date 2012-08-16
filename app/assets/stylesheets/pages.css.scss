@@ -53,8 +53,8 @@ body {
 
 .boxIt {
 	@include boxRadius;
-	height: 147px;
-	width: 147px;
+	height: 145px;
+	width: 145px;
 	margin: 13px;
 	margin-top: 28px;
 	text-align: center;
@@ -106,7 +106,6 @@ body {
 
 .superContainer {
 	margin: 0px auto;
-	//border: 1px solid blue;
 	position: relative;
 	right: 50px;
 	height: 530px;
@@ -121,10 +120,10 @@ body {
 	}
 	.textContainer {
 		height: 323px;
-		width: 550px;
+		width: 540px;
 		position: relative;
-		margin-top: 200px;
-		float: left;
+		margin-top: 197px;
+		float: right;
 		.mainText {
 			@include boxRadius;
 			position: absolute;
@@ -230,6 +229,8 @@ ul {
 .notice {
 	color: red;
 	text-align: center;
+	position: relative;
+	top: 340px;
 }
 input, textarea, select, .uneditable-input {
 	width: 100%;
