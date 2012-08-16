@@ -30,7 +30,7 @@ $(document).ready(function() {
 			speed: 3000
 		});
 	});
-	
+
 	$('.navigation').mouseover(function() {
 		document.cookie = 0;
 		lastNav = currentNav;
