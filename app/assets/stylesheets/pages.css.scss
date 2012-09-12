@@ -3,24 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //ORDER OF SHIT TOP RIGHT BOTTOM LEFT
-$textColor: #214081; //text color in text box
-$boxColor: #252221; //banner color box color
-$mainTextColor: #7AA0BD;
-$textBoxColor: #A0B3C2;
+$textColor: #23201F; //text color in text box
+$boxColor: #23201F; //banner color box color
+$purple: #663399;
+$gray: #686868;
 
 body { 
-	margin: 0;
-	padding: 0;
-	background: url('background.png') no-repeat center center fixed;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 }
 
 @mixin boxRadius {
-	border-radius: 15px;
-	-moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
+	border-radius: 72.5px;
+	-moz-border-radius: 72.5px;
+	-webkit-border-radius: 72.5px;
 }
 
 @keyframes imageSlide {
@@ -93,51 +90,48 @@ body {
 	}
 }
 
-.superContainer {
+.homeContainer {
+	font-family: Mission Script;
+	color: $gray;
 	margin: 0px auto;
 	position: relative;
-	right: 50px;
 	height: 530px;
-	width: 900px;
+	width: 1101px;
 	text-align: center;
-	.listLeft {
-		margin: 2px;
-		float: left;
+	ul {
+		list-style: none;
+		margin-left: 37px;
+		li {
+			float: left;
+			text-align: center;
+		}
 	}
-
-	.listRight {
-		margin: 2px;
-		float: left;
+	.navList {
 	}
 	.textContainer {
-		height: 323px;
-		width: 540px;
+		height: 343px;
+		width: 100%;
 		position: relative;
-		margin-top: 197px;
-		float: right;
+		clear: both;
+		h1 {
+			font-size: 25px;
+			color: $purple;
+		}
+		.sideText {
+			float: left;
+			width: 367px;
+		}
 		.mainText {
-			@include boxRadius;
-			position: absolute;
-			bottom: 0px;
-			right: 295px;
-			background-color: $textBoxColor;
-			border: 10px solid $textBoxColor;
-			height: 303px;
-			width: 225px;
+			width: 367px;
+			float: left;
 			display: block;
 			word-wrap: break-word;
 			overflow: auto;
 			text-align: center;
 		}
 		.calendar {
-			@include boxRadius;
-			position: absolute;
-			bottom: 0px;
-			right: 20px;
-			background-color: $textBoxColor;
-			border: 10px solid $textBoxColor;
-			height: 303px;
-			width: 225px;
+			float: right;
+			width: 367px;
 			display: block;
 			word-wrap: break-word;
 			overflow: auto;
@@ -147,14 +141,8 @@ body {
 		margin: 5px;
 	}
 	.imageGallery {
-		position: absolute;
-		height: 143px;
-		width: 518px;
-		top: 30px;
-		right: 23px;
+		position: relative;
 		img {
-			height: 143px;
-			width: 518px;
 		}
 	}
 }
@@ -169,25 +157,32 @@ ul {
 }
 
 .mainContainer {
+	font-family: Mission Script;
 	width: 100%;
 	overflow: hidden;
 	.alumniBox, .brothersBox, .chapterBox, .contactBox, .recruitmentBox {
-		height: 700px;
-		width: 1050px;
-		margin: 300px auto 50px auto;
+		height: 600px;
+		width: 1200px;
+		margin: 250px auto 50px auto;
 		overflow: hidden;
+	}
+	h1 {
+		font-size: 35px;
+		color: $purple;
+	}
+	h2 {
+		font-size: 25px;
+		color: $purple;
 	}
 }
 
 #sideBar {
-	@include boxRadius;
 	display: block;
-	width: 210px;
+	width: 300px;
 	height: 100%;
-	text-align: left;
 	float: left;
-	background: $boxColor;
 	a {
+		font-size: 25px;
 		text-decoration: none;
 	}
 	a:link { text-decoration: none; color: $textColor; }
@@ -195,28 +190,38 @@ ul {
 	a:hover { text-decoration: none; color: $textColor; }
 	a:active { text-decoration: none; color: $textColor; }
 	.sideList {
-		width: 105px;
-		margin: 25px auto 0px auto;
+		width: 150px;
+		margin: 0px auto 0px auto;
 	}
 }
+
 .centerText {
-	@include boxRadius;
 	display: block;
-	float: right;
-	width: 820px;
+	float: left;
+	width: 500px;
 	height: 100%;
-	background: $boxColor;
 	a {
 		text-decoration: none;
 	}
 	.textBox {
-		color: white;
-		margin: 50px;
-	}
-	label {
-		color: white;
+		color: $gray;
 	}
 }
+
+.calendarText {
+	text-align: center;
+	display: block;
+	float: right;
+	width: 350px;
+	height: 100%;
+		a {
+		text-decoration: none;
+	}
+	.textBox {
+		color: $gray;
+	}
+}
+
 .notice {
 	color: red;
 	text-align: center;

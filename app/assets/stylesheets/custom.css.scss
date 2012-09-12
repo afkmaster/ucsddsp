@@ -4,13 +4,11 @@
 $bannerColor: #252221;
 $textColor: #3267A0;
 
-body {
-	margin: 0;
-	padding: 0;
+.headerContainer {
+	text-align: center;
 }
 
-.headerContainer {
+.footerContainer {
 	background: $bannerColor;
-	height: 100%;
-	text-align: center;
+	text-align: right;
 }

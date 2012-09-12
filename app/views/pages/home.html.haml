@@ -1,5 +1,5 @@
-.superContainer
-	%ul.listLeft
+.homeContainer
+	%ul.navList
 		%li.home.boxIt.navigation#1
 			.homeImage
 				= link_to image_tag('house.png'), root_path
@@ -9,7 +9,6 @@
 		%li.brothers.boxIt.navigation#3
 			.brothersImage
 				= link_to image_tag('brothers.png'), brothers_path
-	%ul.listRight
 		%li.alumni.boxIt.navigation#4
 			.alumniImage
 				= link_to image_tag('alumni.png'), alumni_path
@@ -20,6 +19,9 @@
 			.contactImage
 				= link_to image_tag('contactus.png'), contact_path
 	.textContainer
+		.sideText
+			.textBox
+				%h1 FOLLOW US:
 		.mainText
 			.textBox
 				.alumniText alumni
@@ -29,8 +31,22 @@
 				.recruitmentText recruit
 				.homeText hello
 		.calendar
-			.textBox to be added
+			.textBox
+				%h1 RECRUITMENT SCHEDULE
+				%p THURSDAY, Oct 4: Meet the Chapter
+				%p 8PM @ Rady 1S113
+				%br
+				%p FRIDAY, OCT 5: Alumni Mixer 
+				%p 7PM @ The Forum (PC 4th Floor)
+				%br
+				%p MONDAY, OCT 8: Professional Night 
+				%p 7:30PM @ Rady 1S114
+				%br
+				%p TUESDAY, OCT 9: Brotherhood Night 
+				%p 7PM @ Peterson Loop
+				%br
+				%p THURS-FRI, OCT 11-12: Interviews 
 	.imageGallery
 		%img
-			= image_tag('picture.png')
-			= image_tag('picture2.png')
+			-#= image_tag('picture.png')
+			-#= image_tag('picture2.png')

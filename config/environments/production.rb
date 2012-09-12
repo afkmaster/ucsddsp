@@ -9,8 +9,8 @@ Ucsddsp::Application.configure do
     :address => "smtp.gmail.com",
     :port => 587,
     :domain => "gmail.com",
-    :user_name => "andykim90@gmail.com",
-    :password => "Hyungon1",
+    :user_name => "jchan621@gmail.com",
+    :password => "calbears2012",
     :authentication => :plain,
     :enable_starttls_auto => true
   }
