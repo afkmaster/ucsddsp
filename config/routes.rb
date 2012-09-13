@@ -2,7 +2,7 @@ Ucsddsp::Application.routes.draw do
   root to: 'pages#home'
   resources :messages
 
-  match '/chapter', to: 'pages#chapter'
+  match '/about', to: 'pages#about'
   match '/brothers', to: 'pages#brothers'
   match '/alumni', to: 'pages#alumni'
   match '/recruitment', to: 'pages#recruitment'

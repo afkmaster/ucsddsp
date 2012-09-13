@@ -3,7 +3,7 @@ class PagesController < ApplicationController
     flash[:notice] = ""
   end
 
-  def chapter
+  def about
     flash[:notice] = ""
   end
 
