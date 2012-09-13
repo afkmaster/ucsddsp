@@ -1,40 +1,57 @@
 .homeContainer
 	.navList
-		%ul
+		%ul#homeNav
 			%li.home.boxIt.navigation#1
 				.homeImage
 					= link_to image_tag('house.png'), root_path
 			%li.chapter.boxIt.navigation#2
-				.aboutImage
-					= link_to image_tag('chapter.png'), about_path
+				= link_to image_tag('chapter.png'), about_path
 			%li.brothers.boxIt.navigation#3
-				.brothersImage
-					= link_to image_tag('brothers.png'), brothers_path
+				= link_to image_tag('brothers.png'), brothers_path
 			%li.alumni.boxIt.navigation#4
-				.alumniImage
-					= link_to image_tag('alumni.png'), alumni_path
+				= link_to image_tag('alumni.png'), alumni_path
 			%li.recruitment.boxIt.navigation#5
-				.recruitmentImage
-					= link_to image_tag('recruitment.png'), recruitment_path
+				= link_to image_tag('recruitment.png'), recruitment_path
 			%li.contact.boxIt.navigation#6
-				.contactImage
-					= link_to image_tag('contactus.png'), contact_path
+				= link_to image_tag('contactus.png'), contact_path
+			%li.stretch
 	.textContainer
 		.sideText
 			.textBox
 				%h1 FOLLOW US:
+				= link_to image_tag('facebook.gif'), root_path
+				Like us on Facebook to follow up on upcoming news and events
 		.mainText
 			.textBox
 				%h1 WHO WE ARE
-				.alumniText alumni
-				.brothersText brothers
-				.aboutText chapter
-				.contactText contact
-				.recruitmentText recruit
+				.alumniText
+					%p 
+						We 
+						%strong span 
+						the 
+						%em globe. 
+						Read our stories.
+				.brothersText 
+					%p 
+						Everyday people doing 
+						%em extraordinary
+						things.
+				.aboutText
+					%p 
+						Let 
+						%em our 
+						focus become your focus
+				.contactText 
+					%p Questions? Partnerships? Want to hold an event at UCSD? Feel free to ask us anything.
+				.recruitmentText 
+					%p Involvement in our fraternity has successfully transitioned our members into the professional world.
+					%br
+					%p Learn how you can be a part of it too.
+
 				.homeText hello
 		.calendar
 			.textBox
-				%h1 RECRUITMENT SCHEDULE
+				%h1 RECRUITMENT
 				%p THURSDAY, Oct 4: Meet the Chapter
 				%p 8PM @ Rady 1S113
 				%br

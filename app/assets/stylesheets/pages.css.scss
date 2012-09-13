@@ -9,6 +9,7 @@ $gray: #686868;
 $questions: #23201F;
 
 body { 
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -42,7 +43,6 @@ body {
 	@include boxRadius;
 	height: 126px;
 	width: 126px;
-	font-family: Mission Script;
 	background-color: $boxColor;
 	transition: .3s;
 	-moz-transition: .3s;
@@ -56,9 +56,9 @@ body {
 		-webkit-transform: scale(1.2);
 	}
 	.homeImage {
-		position: relative;
-		height: 100%;
-		top: 15px;
+	position: relative;
+	height: 100%;
+	top: 15px;
 	}
 	.aboutImage {
 		position: relative;
@@ -91,16 +91,12 @@ body {
 	margin: 0px auto;
 	position: relative;
 	height: 530px;
-	width: 948px;
+	width: 986px; //948 + margin 19, 38 total
 	text-align: center;
 	.navList {
-
-	}
-	ul {
-		list-style: none;
 		li {
 			float: left;
-			text-align: center;
+			margin: 5px 19px;
 		}
 	}
 	.textContainer {
@@ -109,13 +105,15 @@ body {
 		position: relative;
 		clear: both;
 		h1 {
-			font-size: 2em;
-			font-family: MarketDeco;
+			font-size: 24px;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 			color: $purple;
 		}
 		.sideText {
 			float: left;
-			width: 316px;
+			text-align: left;
+			margin: 0px 0px 0px 19px;
+			width: 332px;
 		}
 		.mainText {
 			width: 316px;
@@ -123,14 +121,17 @@ body {
 			display: block;
 			word-wrap: break-word;
 			overflow: auto;
-			text-align: center;
+			text-align: left;
 		}
 		.calendar {
 			float: right;
-			width: 316px;
+			width: 300px;
 			display: block;
 			word-wrap: break-word;
 			overflow: auto;
+			p {
+				font-size: 12px;
+			}
 		}
 	}
 	.textBox {
@@ -148,33 +149,37 @@ body {
 }
 
 .mainContainer {
-	font-family: Mission Script;
 	width: 100%;
 	overflow: hidden;
 	margin: 0px 0px 75px 0px;
 	.alumniBox, .brothersBox, .aboutBox, .contactBox, .recruitmentBox {
 		width: 1200px;
-		margin: 250px auto 50px auto;
+		margin: 250px auto 25px auto;
 	}
 	h1 {
-		font-size: 35px;
+		font-size: 24px;
 		color: $purple;
 	}
 	h2 {
-		font-size: 25px;
+		font-size: 24px;
 		color: $purple;
+	}
+	p {
+		font-size: 16px;
 	}
 }
 
 #sideBar {
 	display: block;
-	width: 325px;
-	height: 100%;
+	width: 300px;
+	height: 200px;
 	float: left;
 	a {
-		font-size: 25px;
+		display: block;
+		font-size: 20px;
 		text-decoration: none;
 		color: $gray;
+		margin: 10px 0px 0px 0px;
 	}
 	.sideList {
 		width: 150px;
@@ -183,11 +188,15 @@ body {
 }
 
 .centerText {
+	.textBox {
+		margin: 6px 0px 0px 0px;
+	}
 	display: block;
 	float: left;
 	width: 500px;
 	height: 100%;
 	color: $gray;
+	margin: 0px 0px 0px 20px;
 	a {
 		text-decoration: none;
 	}
@@ -212,6 +221,10 @@ body {
 		h3 {
         	font-size: 18px;
         	color: $gray;
+        	&:hover {
+        		color: black;
+        		background: #F3F5F5;
+        	}
     	}
  		span {
 	        position: absolute;
@@ -237,6 +250,12 @@ body {
 	}
 	.textBox {
 		color: $gray;
+	}
+	h2 { 
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	}
+	p {
+		font-size: 14px;
 	}
 }
 

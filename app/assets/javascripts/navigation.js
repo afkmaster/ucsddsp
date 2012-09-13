@@ -1,4 +1,4 @@
-var divIds = ["",".homeText",".chapterText", ".brothersText", ".alumniText", ".recruitmentText", ".contactText"];
+var divIds = ["",".homeText",".aboutText", ".brothersText", ".alumniText", ".recruitmentText", ".contactText"];
 var pageIds = ["", ".aboutBox", ".brothersBox", ".alumniBox", ".recruitmentBox", ".contactBox"];
 var pageValue = { "about": 1, "brothers": 2, "alumni": 3, "recruitment": 4, "contact": 5 }
 var currentNav = 1;
