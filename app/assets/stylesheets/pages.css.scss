@@ -3,10 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //ORDER OF SHIT TOP RIGHT BOTTOM LEFT
-$textColor: #23201F; //text color in text box
 $boxColor: #23201F; //banner color box color
 $purple: #663399;
 $gray: #686868;
+$questions: #23201F;
 
 body { 
 	background-size: cover;
@@ -15,9 +15,9 @@ body {
 }
 
 @mixin boxRadius {
-	border-radius: 72.5px;
-	-moz-border-radius: 72.5px;
-	-webkit-border-radius: 72.5px;
+	border-radius: 63px;
+	-moz-border-radius: 63px;
+	-webkit-border-radius: 63px;
 }
 
 @keyframes imageSlide {
@@ -40,11 +40,8 @@ body {
 
 .boxIt {
 	@include boxRadius;
-	height: 145px;
-	width: 145px;
-	margin: 13px;
-	margin-top: 28px;
-	color: $textColor;
+	height: 126px;
+	width: 126px;
 	font-family: Mission Script;
 	background-color: $boxColor;
 	transition: .3s;
@@ -52,7 +49,6 @@ body {
 	-webkit-transition: .3s;
 	a {
 		text-decoration: none;
-		color: $textColor;
 	}
 	&:hover {
 		transform: scale(1.2);
@@ -91,38 +87,38 @@ body {
 }
 
 .homeContainer {
-	font-family: Mission Script;
 	color: $gray;
 	margin: 0px auto;
 	position: relative;
 	height: 530px;
-	width: 1101px;
+	width: 948px;
 	text-align: center;
+	.navList {
+
+	}
 	ul {
 		list-style: none;
-		margin-left: 37px;
 		li {
 			float: left;
 			text-align: center;
 		}
 	}
-	.navList {
-	}
 	.textContainer {
-		height: 343px;
+		height: 225px;
 		width: 100%;
 		position: relative;
 		clear: both;
 		h1 {
-			font-size: 25px;
+			font-size: 2em;
+			font-family: MarketDeco;
 			color: $purple;
 		}
 		.sideText {
 			float: left;
-			width: 367px;
+			width: 316px;
 		}
 		.mainText {
-			width: 367px;
+			width: 316px;
 			float: left;
 			display: block;
 			word-wrap: break-word;
@@ -131,7 +127,7 @@ body {
 		}
 		.calendar {
 			float: right;
-			width: 367px;
+			width: 316px;
 			display: block;
 			word-wrap: break-word;
 			overflow: auto;
@@ -147,11 +143,6 @@ body {
 	}
 }
 
-ul {
-	list-style: none;
-	margin: 0px;
-}
-
 .alumniText, .brothersText, .chapterText, .contactText, .recruitmentText {
 	display: none;
 }
@@ -160,11 +151,10 @@ ul {
 	font-family: Mission Script;
 	width: 100%;
 	overflow: hidden;
+	margin: 0px 0px 75px 0px;
 	.alumniBox, .brothersBox, .chapterBox, .contactBox, .recruitmentBox {
-		height: 600px;
 		width: 1200px;
 		margin: 250px auto 50px auto;
-		overflow: hidden;
 	}
 	h1 {
 		font-size: 35px;
@@ -178,17 +168,13 @@ ul {
 
 #sideBar {
 	display: block;
-	width: 300px;
+	width: 325px;
 	height: 100%;
 	float: left;
 	a {
 		font-size: 25px;
 		text-decoration: none;
 	}
-	a:link { text-decoration: none; color: $textColor; }
-	a:visited { text-decoration: none; color: $textColor; }
-	a:hover { text-decoration: none; color: $textColor; }
-	a:active { text-decoration: none; color: $textColor; }
 	.sideList {
 		width: 150px;
 		margin: 0px auto 0px auto;
@@ -200,19 +186,50 @@ ul {
 	float: left;
 	width: 500px;
 	height: 100%;
+	color: $gray;
 	a {
 		text-decoration: none;
 	}
 	.textBox {
 		color: $gray;
 	}
+	label {
+		color: $gray;
+	}
+	#toggle-view {
+	    list-style: none;   
+	    font-size: 14px;
+	    margin: 0;
+	    padding: 0;
+	    width: 500px;
+	    li {
+	        margin: 10px;
+	        border-bottom: 1px solid #ccc;
+	        position: relative;
+	        cursor: pointer;
+		}
+		h3 {
+        	font-size: 18px;
+        	color: $gray;
+    	}
+ 		span {
+	        position: absolute;
+	        right: 5px; top:0;
+	        color: #ccc;
+	        font-size: 16px;
+	    }
+     	.panel {
+        	margin: 5px 0;
+        	display: none;
+    	}
+    }
 }
 
 .calendarText {
 	text-align: center;
 	display: block;
 	float: right;
-	width: 350px;
+	width: 325px;
 	height: 100%;
 		a {
 		text-decoration: none;
@@ -226,8 +243,9 @@ ul {
 	color: red;
 	text-align: center;
 	position: relative;
-	top: 340px;
+	top: 250px;
 }
+
 input, textarea, select, .uneditable-input {
 	width: 100%;
 	height: auto;
