@@ -73,11 +73,12 @@ body {
 	.alumniImage {
 		position: relative;
 		height: 100%;
+		top: 30px;
 	}
 	.recruitmentImage {
 		position: relative;
 		height: 100%;
-		top: 10px;
+		top: 30px;
 	}
 	.contactImage {
 		position: relative;
@@ -228,7 +229,8 @@ body {
     	}
  		span {
 	        position: absolute;
-	        right: 5px; top:0;
+	        right: 0px; 
+	        top: 0px;
 	        color: #ccc;
 	        font-size: 16px;
 	    }
