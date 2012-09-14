@@ -21,22 +21,67 @@ body {
 	-webkit-border-radius: 63px;
 }
 
-@keyframes imageSlide {
-	0% { left: 0px; }
-	50% { left: 45px; }
-	100% { left: -45px }
+@keyframes moveFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-moz-keyframes moveFromBottom {
+    from {
+        opacity: 0;
+        -moz-transform: translateY(200%);
+    }
+    to {
+        opacity: 1;
+        -moz-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes moveFromBottom {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(200%);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
 }
 
-@-moz-keyframes imageSlide {
-	0% { left: 0px; }
-	50% { left: 45px;}
-	100% { left: -45px }
+@keyframes moveFromLeft{
+    from {
+    	opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+    	opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
-@-webkit-keyframes imageSlide {
-	0% { left: 0px; }
-	50% { left: 45px; }
-	100% { left: -45px }
+@-moz-keyframes moveFromLeft{
+    from {
+    	opacity: 0;
+        -moz-transform: translateX(-100%);
+    }
+    to {
+    	opacity: 1;
+        -moz-transform: translateX(0%);
+    }
+}
+@-webit-keyframes moveFromLeft{
+    from {
+    	opacity: 0;
+        -webkit-transform: translateX(-200%);
+    }
+    to {
+    	opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
 }
 
 .boxIt {
@@ -50,81 +95,47 @@ body {
 	a {
 		display: block;
 		position: relative;
+		text-decoration: none;
+		height: 126px;
+		width: 126px;
 	}
-	span {
+	span, p {
 		font-family: "Brush Script MT", cursive;
 		font-size: 24px;
+		color: $gray;
+		text-decoration: none;
+		position: relative;
+		margin: 0px auto;
+		display: block;
 	}
 	.homeImage {
-		a {
-			padding-top: 25px;
-			height: 101px;
-			width: 126px;
-		}
 		span {
-			position: absolute;
-			top: 432px;
-			left: 63px;
+			margin: 20px 0 10px 0;
 		}
 	}
 	.aboutImage {
-		a {
-			padding-top: 30px;
-			height: 96px;
-			width: 126px;
-		}
 		span {
-			position: absolute;
-			top: 432px;
-			left: 207px;
+			margin: 30px 0 10px 0;
 		}
 	}
 	.brothersImage {
-		a {
-			padding-top: 15px;
-			height: 111px;
-			width: 126px;
-		}
 		span {
-			position: absolute;
-			top: 432px;
-			left: 378px;
+			margin: 10px 0 10px 0;
 		}
 	}
 	.alumniImage {
-		a {
-			padding-top: 25px;
-			height: 101px;
-			width: 126px;
-		}
 		span {
-			position: absolute;
-			top: 432px;
-			left: 547px;
+			margin: 18px 0 6px 0;
 		}
 	}
 	.recruitmentImage {
-		a {
-			padding-top: 25px;
-			height: 101px;
-			width: 126px;
-		}
 		span {
-			position: absolute;
-			top: 432px;
-			left: 693px;
+			margin: 18px 0 0px 0;
 		}
 	}
 	.contactImage {
-		a {
-			padding-top: 30px;
-			height: 96px;
-			width: 126px;
-		}
 		span {
-			position: absolute;
-			top: 432px;
-			left: 859px;
+			margin: 25px 0 10px 0;
 		}
 	}
 }
@@ -139,7 +150,24 @@ body {
 	.navList {
 		li {
 			float: left;
+			overflow: hidden;
+			position: relative;
 			margin: 5px 19px;
+			transition: all 200ms linear;
+			-moz-transition: all 200ms linear;
+			-webkit-transition: all 200ms linear;
+			&:hover {
+				span {
+					animation: moveFromLeft 500ms ease;
+					-moz-animation: moveFromLeft 500ms ease;
+					-webkit-animation: moveFromLeft 500ms ease;
+				}
+				p {
+					animation: moveFromBottom 500ms ease;
+					-moz-animation: moveFromBottom 500ms ease;
+					-webkit-animation: moveFromBottom 500ms ease;
+				}
+			}
 		}
 	}
 	.textContainer {
