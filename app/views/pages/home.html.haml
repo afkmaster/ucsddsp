@@ -4,21 +4,27 @@
 			%li.home.boxIt.navigation#1
 				.homeImage
 					= link_to image_tag('house.png'), root_path
+					%span Home
 			%li.about.boxIt.navigation#2
 				.aboutImage
-					= link_to image_tag('chapter.png'), about_path
+					= link_to image_tag('about.png'), about_path
+					%span About Us
 			%li.brothers.boxIt.navigation#3
 				.brothersImage
 					= link_to image_tag('brothers.png'), brothers_path
+					%span Brothers
 			%li.alumni.boxIt.navigation#4
 				.alumniImage
 					= link_to image_tag('alumni.png'), alumni_path
+					%span Alumni
 			%li.recruitment.boxIt.navigation#5
 				.recruitmentImage
 					= link_to image_tag('recruitment.png'), recruitment_path
+					%span Recruitment
 			%li.contact.boxIt.navigation#6
 				.contactImage
 					= link_to image_tag('contactus.png'), contact_path
+					%span Contact Us
 	.textContainer
 		.sideText
 			.textBox
@@ -27,32 +33,44 @@
 				Like us on Facebook to follow up on upcoming news and events
 		.mainText
 			.textBox
+				.homeText
+					%h1 Welcome!
+					%p
+						Learn about 
+						%em who 
+						we are, 
+						%em where 
+						we come from, and 
+						%em what 
+						we do.
 				.alumniText
-					%h1
+					%h1 Where Are We
+					%p 
 						We 
 						%strong span 
 						the 
 						%em globe. 
 						Read our stories.
 				.brothersText 
-					%h1 
+					%h1 Learn About Us
+					%p 
 						Everyday people doing 
 						%em extraordinary
 						things.
 				.aboutText
-					%h1
+					%h1 Who We Are
+					%p 
 						Let 
 						%em our 
 						focus become your focus
 				.contactText 
-					%h1 Questions? Partnerships? Want to hold an event at UCSD? Feel free to ask us anything.
-				.recruitmentText 
-					%h1 Involvement in our fraternity has successfully transitioned our members into the professional world.
+					%h1 Ask Us Anything
+					%p Questions? Partnerships? Want to bring your presence at UCSD? Feel free to ask us anything. 
+				.recruitmentText
+					%h1 Come Join Us
+					%p Involvement in our fraternity has successfully transitioned our members into the professional world.
 					%br
-					%h1 Learn how you can be a part of it too.
-
-				.homeText
-					%h1 WHO WE ARE
+					%p Learn how you can be a part of it too.
 		.calendar
 			.textBox
 				%h1 RECRUITMENT
