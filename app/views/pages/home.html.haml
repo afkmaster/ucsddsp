@@ -1,4 +1,9 @@
 .homeContainer
+	.imageGallery
+		%img
+			= image_tag('picture1.png')
+			= image_tag('picture2.png')
+			= image_tag('picture3.png')
 	.navList
 		%ul#homeNav
 			%li.home.boxIt.navigation#1
@@ -43,6 +48,20 @@
 						we come from, and 
 						%em what 
 						we do.
+				.aboutText
+					%h1 Who We Are
+					%p 
+						Let 
+						%em our 
+						focus become 
+						%em your 
+						focus.
+				.brothersText 
+					%h1 Learn About Us
+					%p 
+						Everyday people doing 
+						%em extraordinary
+						things.
 				.alumniText
 					%h1 Where Are We
 					%p 
@@ -51,18 +70,6 @@
 						the 
 						%em globe. 
 						Read our stories.
-				.brothersText 
-					%h1 Learn About Us
-					%p 
-						Everyday people doing 
-						%em extraordinary
-						things.
-				.aboutText
-					%h1 Who We Are
-					%p 
-						Let 
-						%em our 
-						focus become your focus
 				.contactText 
 					%h1 Ask Us Anything
 					%p Questions? Partnerships? Want to bring your presence at UCSD? Feel free to ask us anything. 
@@ -74,7 +81,7 @@
 		.calendar
 			.textBox
 				%h1 RECRUITMENT
-				%p THURSDAY, Oct 4: Meet the Chapter
+				%p THURSDAY, OCT 4: Meet the Chapter
 				%p 8PM @ Rady 1S113
 				%br
 				%p FRIDAY, OCT 5: Alumni Mixer 
@@ -87,7 +94,3 @@
 				%p 7PM @ Peterson Loop
 				%br
 				%p THURS-FRI, OCT 11-12: Interviews 
-	.imageGallery
-		%img
-			-#= image_tag('picture.png')
-			-#= image_tag('picture2.png')
