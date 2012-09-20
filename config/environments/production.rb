@@ -1,5 +1,4 @@
 Ucsddsp::Application.configure do
-
   # EMAIL
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
@@ -9,8 +8,8 @@ Ucsddsp::Application.configure do
     :address => "smtp.gmail.com",
     :port => 587,
     :domain => "gmail.com",
-    :user_name => "jchan621@gmail.com",
-    :password => "calbears2012",
+    :user_name => "noreply.ucsddsp@gmail.com",
+    :password => "05ig05h1t",
     :authentication => :plain,
     :enable_starttls_auto => true
   }
