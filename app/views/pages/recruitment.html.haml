@@ -1,5 +1,7 @@
 .mainContainer
 	.recruitmentBox
+		.pics
+			= image_tag('where are we now.png')
 		#sideBar
 			%ul.sideList
 				%li.home
@@ -17,7 +19,6 @@
 
 		.centerText
 			.textBox
-				= link_to "Application", :controller => "pages", :action => "download"
 				%h2 FAQ:
 				%ul#toggle-view
 					%li
@@ -68,6 +69,10 @@
 				%p 
 					More questions? 
 					= link_to "Contact us", contact_path
+				%p 
+					Download the
+					= link_to "application", :controller => "pages", :action => "download"
+					here
 		.calendarText
 			.textBox
 				%h2 RECRUITMENT SCHEDULE

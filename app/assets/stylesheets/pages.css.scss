@@ -8,6 +8,11 @@ $purple: #663399;
 $gray: #686868;
 $questions: #23201F;
 
+@font-face {  
+	font-family: MarketDeco;  
+	src: url("MarketDeco.ttf") format("truetype");  
+}  
+
 body { 
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-size: cover;
@@ -140,6 +145,15 @@ body {
 	}
 }
 
+.pics {
+	height: 331px;
+	width: 968px;
+	margin: 20px auto;
+	overflow: hidden;
+	img {	
+	}
+}
+
 .homeContainer {
 	color: $gray;
 	margin: 0px auto;
@@ -179,7 +193,7 @@ body {
 		clear: both;
 		h1 {
 			font-size: 24px;
-			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-family: MarketDeco, "Trebuchet MS", Arial, sans-serif;
 			color: $purple;
 		}
 		.sideText {
@@ -210,13 +224,6 @@ body {
 	.textBox {
 		margin: 5px;
 	}
-	.pics {
-		height: 331px;
-		width: 968px;
-		margin: 20px auto;
-		img {
-		}
-	}
 }
 
 .alumniText, .brothersText, .aboutText, .contactText, .recruitmentText {
@@ -229,7 +236,7 @@ body {
 	margin: 0px 0px 75px 0px;
 	.alumniBox, .brothersBox, .aboutBox, .contactBox, .recruitmentBox {
 		width: 1200px;
-		margin: 250px auto 25px auto;
+		margin: 0px auto 25px auto;
 	}
 	h1 {
 		font-size: 24px;
@@ -258,7 +265,7 @@ body {
 	}
 	.sideList {
 		width: 150px;
-		margin: 0px auto 0px auto;
+		margin: 0px 0px 0px 120px;
 	}
 }
 
@@ -328,7 +335,7 @@ body {
 		color: $gray;
 	}
 	h2 { 
-		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-family: MarketDeco, "Trebuchet MS", Arial, sans-serif;
 	}
 	p {
 		font-size: 14px;
