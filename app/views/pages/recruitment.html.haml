@@ -1,7 +1,7 @@
 .mainContainer
 	.recruitmentBox
-		.pics
-			= image_tag('where are we now.png')
+		.pics.shadow
+			= image_tag('recruitment banner.png')
 		#sideBar
 			%ul.sideList
 				%li.home
@@ -90,6 +90,7 @@
 				%br
 				%p THURS-FRI, OCT 11-12: Interviews 
 				%p Sign-Up Only
+			%img.magnify{:src => "assets/flyer back - original.jpg", :style => "width:250px; height:300px"}
 
 %script
 	(function()

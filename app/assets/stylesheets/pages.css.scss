@@ -89,6 +89,12 @@ body {
     }
 }
 
+.shadow {
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+}
+
 .boxIt {
 	@include boxRadius;
 	height: 126px;
@@ -235,7 +241,7 @@ body {
 	overflow: hidden;
 	margin: 0px 0px 75px 0px;
 	.alumniBox, .brothersBox, .aboutBox, .contactBox, .recruitmentBox {
-		width: 1200px;
+		width: 1000px;
 		margin: 0px auto 25px auto;
 	}
 	h1 {
@@ -253,7 +259,7 @@ body {
 
 #sideBar {
 	display: block;
-	width: 300px;
+	width: 150px;
 	height: 200px;
 	float: left;
 	a {
@@ -265,7 +271,7 @@ body {
 	}
 	.sideList {
 		width: 150px;
-		margin: 0px 0px 0px 120px;
+		margin: 0px 0px 0px 15px;
 	}
 }
 
