@@ -21,5 +21,9 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def download
+    send_file("#{Rails.root}/public/application.doc", :type => "application/doc")
+  end
   
 end

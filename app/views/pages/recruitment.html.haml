@@ -17,31 +17,24 @@
 
 		.centerText
 			.textBox
-				%h2 Pledging:
-				%ul#toggle-view
-					%li
-						%h3 How are you different from a business club?
-						%span +
-						.panel
-							%p Currently, the prestige of the University of California, San Diego is known for its sciences.  This gives a slight disadvantage to UCSD students who apply for business-orientated occupations because companies commonly recognize UCSD as a school of science, rather than one with business potential.  Additionally, UCSD has yet to establish an actual business major to compliment the available alternative studies.
-							%br
-							%p These disadvantages can be countered from utilizing Delta Sigma Pi as a foundation of business.  We provide tools sourced from diverse backgrounds of educational and working experience that make up for the lack of business emphasis in our university.  After becoming a brother of the Fraternity, you are opened to a bigger network of people with common interests and ideas. 
-					%li
-						%h3 How long is the pledging process? What does it entail?
-						%span +
-						.panel
-							%p The pledging process is # weeks.  Think of it as an interview process to show your dedication to the position you want in a company: Delta Sigma Pi.  Our program is made to prepare pledges through various projects and obstacles as a group to establish lasting relationships.  The purpose is to help shape pledges into being capable and confident individuals who can achieve their aspirations.
-				%br
-				%br
+				= link_to "Application", :controller => "pages", :action => "download"
 				%h2 FAQ:
 				%ul#toggle-view
 					%li
-						%h3 How are you different from a business club?
+						%h3 What is recruitment week?
 						%span +
 						.panel
-							%p Our unique installation as a club and a fraternity allows for individuals to make long lasting relationships while and after pledging.  We provide the learning aspect of what a club may entail, while creating strong bonds among members.
+							%p Recruitment week consists of a series of events for you to determine whether or not our organization is a right fit for you. Likewise, recruitment week also helps us determine whether or not you are a right fit for our fraternity. We encourage you to attend as many events as possible and to meet as many brothers and prospective members as you can.
+					%li
+						%h3 Why should I join?
+						%span +
+						.panel
+							%p Currently, UC San Diego is known predominately for its sciences, giving a slight disadvantage to UCSD students who apply for business-orientated occupations. Additionally, UCSD has yet to establish an actual business major to compliment the available alternative studies.
 							%br
-							%p Because we are a fraternity, there’s a pledging process.  The pledging period, as well as the application week during recruitment, is a learning experience in itself.  Our focus for pledge classes is to encompass business skills and knowledge, so that you can apply what you’ve learned during this period directly into the corporate world.
+							%p 
+								These disadvantages can be countered by utilizing Delta Sigma Pi as a foundation of business. As a member, you will be able to attend exclusive events for our chapter. We are actively featuring speakers on our campus, and providing opportunities. To counter the lack of business emphasis in our university's curriculum, involvement in the fraternity will also help you develop tools, sourced from diverse backgrounds of educational and working experiences, for success in your professional life. After becoming a brother of the Fraternity, you are opened to a bigger network of people with common interests and ideas. Refer to our 
+								= link_to "alumni page", alumni_path 
+								for some of our stories!
 					%li
 						%h3 Can students of any major join?
 						%span +
@@ -55,20 +48,26 @@
 							%br
 							%p *Exceptions are made depending on the focuses and interests expressed by prospects during recruitment.
 					%li
-						%h3 How much time commitment should I expect from joining?
+						%h3 What are the steps to becoming a member of Delta Sigma Pi?
 						%span +
 						.panel
-							%p DSP is expected to be one of your top priorities, complimenting school and work.  Brothers are encouraged to actively collaborate with each other in fostering the purpose of the fraternity—to encourage scholarship, social activity, and the association of students for their mutual advancement in research and practice; to promote closer affiliation between the commercial world and students of commerce; and to further a higher standard of commercial ethics and culture and the civic and commercial welfare of the community.
+							%p Recruitment week:
+							%p We recommend attending as many recruitment events as possible and meeting as many brothers and other prospective members as you can. Remember to sign up for an interview slot during one of our events. After interviews are conducted, you will be notified if you received a bid  (an invitation to pledge for our fraternity).
+							%br
+							%p Pledging:
+							%p The pledging process is 6-7 weeks and serves as an assessment period for us to further evaluate your fit. Each pledge class will be required to complete a series of projects. Our unique approach to the pledge education program serves to benefit the pledge class above all else. We take pride in this.
+							%br
+							%p Initiation:
+							%p The initiation ceremony is held at the end of the pledging period. After participating in the initiation ceremony, you will then be acknowledged as a brother of Delta Sigma Pi.
 					%li
-						%h3 What might I expect to do?
+						%h3 What level of knowledge is expected of me?
 						%span +
 						.panel
-							%p We are pillared by community service, professionalism, and brotherhood.  These key areas are stimulated by various events that include presentations, key-note speakers, projects, retreats, fundraising, company tours, critiques, interview/resume review sessions, private company invites, and more.  The main influence of success in these areas comes from the idea that, the more you put into the Fraternity, the more you get out of it.
-					%li
-						%h3 Can I apply for DSP again if I am not accepted?
-						%span +
-						.panel
-							%p Yes.  If you were not accepted during the first round and are still interested in joining, please don’t feel discouraged and apply again.  This highlights your dedication to our organization and we will reconsider you with this acknowledgement.  We advise you to take the time between the first round and the next to improve your application and bring something new to the table.
+							%p There is no specific set of knowledge that you are required to have. We look at each individual on a case by case basis. More commonly, we look for someone who is a self-starter. 
+				%br
+				%p 
+					More questions? 
+					= link_to "Contact us", contact_path
 		.calendarText
 			.textBox
 				%h2 RECRUITMENT SCHEDULE

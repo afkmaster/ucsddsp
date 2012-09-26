@@ -25,12 +25,9 @@ $(document).ready(function() {
 		}
 	document.cookie = 0;
 	*/
-	$('.imageGallery img:first').fadeIn(1000, function() {
-		$('.imageGallery').css("visibility", "visible");
-		$('.imageGallery').cycle({
-			fx: 'fade',
-			speed: 3000
-		});
+	$('.pics').cycle({
+		fx: 'fade',
+		speed: 3000
 	});
 
 	$('.navigation').mouseover(function() {
