@@ -276,15 +276,15 @@ body {
 }
 
 .centerText {
-	.textBox {
-		margin: 6px 0px 0px 0px;
-	}
 	display: block;
 	float: left;
-	width: 500px;
+	width: 525px;
 	height: 100%;
 	color: $gray;
 	margin: 0px 0px 0px 20px;
+	img {
+		margin: 4px 3px;
+	}
 	a {
 		text-decoration: none;
 	}
@@ -299,7 +299,7 @@ body {
 	    font-size: 14px;
 	    margin: 0;
 	    padding: 0;
-	    width: 500px;
+	    width: 525px;
 	    li {
 	        margin: 10px;
 	        border-bottom: 1px solid #ccc;
@@ -332,7 +332,7 @@ body {
 	text-align: center;
 	display: block;
 	float: right;
-	width: 325px;
+	width: 300px;
 	height: 100%;
 		a {
 			text-decoration: none;

@@ -18,7 +18,11 @@
 
 		.centerText
 			.textBox
-				Coming Soon!
+				- @values.each do |x|
+					= image_tag("version2/#{x}")
+				%p
+				%br
+				%p Brothers not listed: Kimmy Cheung, Christine Dey, Che Ouyang, Yachen Sun, Nathan Wieneke
 		.calendarText
 			.textBox
 				%h2 RECRUITMENT SCHEDULE
