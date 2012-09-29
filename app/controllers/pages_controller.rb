@@ -10,12 +10,12 @@ class PagesController < ApplicationController
   def brothers
     flash[:notice] = ""
     @values = []
-    @test = []
     Dir.new("#{Rails.root}/app/assets/images/version1").each do |entry|
       if not File.directory?(entry)
         @values.push(entry)
       end
     end
+    @values = @values.sort
   end
 
   def alumni
