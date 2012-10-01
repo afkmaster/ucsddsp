@@ -244,6 +244,11 @@ body {
 		width: 1000px;
 		margin: 0px auto 25px auto;
 	}
+	.contactBox {
+		.centerText {
+			width: 625px;
+		}
+	}
 	h1 {
 		font-size: 24px;
 		color: $purple;
@@ -352,7 +357,6 @@ body {
 	color: red;
 	text-align: center;
 	position: relative;
-	top: 250px;
 }
 
 input, textarea, select, .uneditable-input {
