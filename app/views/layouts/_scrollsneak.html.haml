@@ -1,0 +1,7 @@
+%script
+	(function()
+	{ 
+	var sneaky = new ScrollSneak(location.hostname), tabs = document.getElementById('sideBar').getElementsByTagName('li'), i = 0, len = tabs.length;
+	for (; i < len; i++){ tabs[i].onclick = sneaky.sneak; }
+	document.getElementById('next').onclick = sneaky.sneak;
+	})();

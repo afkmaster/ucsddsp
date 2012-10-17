@@ -17,13 +17,14 @@
     })();
   </script>
   <%= render 'layouts/shim' %>
-  <%= render 'layouts/header' %>
 </head>
 <body>
+  <%= render 'layouts/header' %>
 	<div class="notice">
 		<%= notice %>
 	</div>
 	<%= yield %>
+  <%= render 'layouts/scrollsneak' %>
   <%= render 'layouts/footer' %>
 </body>
 </html>

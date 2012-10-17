@@ -1,14 +1,14 @@
 class PagesController < ApplicationController
   def home
-    flash[:notice] = ""
+    flash[:notice] = nil
   end
 
   def about
-    flash[:notice] = ""
+    flash[:notice] = nil
   end
 
   def brothers
-    flash[:notice] = ""
+    flash[:notice] = nil
     @values = []
     Dir.new("#{Rails.root}/app/assets/images/version2").each do |entry|
       if not File.directory?(entry)
@@ -19,11 +19,11 @@ class PagesController < ApplicationController
   end
 
   def alumni
-    flash[:notice] = ""
+    flash[:notice] = nil
   end
 
   def recruitment
-    flash[:notice] = ""
+    flash[:notice] = nil
   end
 
   def contact

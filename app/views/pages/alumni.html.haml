@@ -3,20 +3,7 @@
 		.pics.shadow
 			= image_tag('where are we now.png')
 			= image_tag('logo.png')
-		#sideBar
-			%ul.sideList
-				%li.home
-					= link_to "Home", root_path
-				%li.chapter.pageSlide#1
-					= link_to "About Us", about_path
-				%li.brothers.pageSlide#2
-					= link_to "Brothers", brothers_path
-				%li.alumni.pageSlide#3
-					= link_to "Alumni", alumni_path
-				%li.recruitment.pageSlide#4
-					= link_to "Recruitment", recruitment_path
-				%li.contact.pageSlide#5
-					= link_to "Contact Us", contact_path
+		= render 'layouts/sidebar'
 		.centerText
 			.textBox
 				%h2 Alumni Feature:
@@ -69,11 +56,3 @@
 				%p THURS-FRI, OCT 11-12: Interviews
 				%p By Appointment Only
 				%p Professional Business Attire
-
-%script
-	(function()
-	{ 
-	var sneaky = new ScrollSneak(location.hostname), tabs = document.getElementById('sideBar').getElementsByTagName('li'), i = 0, len = tabs.length;
-	for (; i < len; i++){ tabs[i].onclick = sneaky.sneak; }
-	document.getElementById('next').onclick = sneaky.sneak;
-	})();
