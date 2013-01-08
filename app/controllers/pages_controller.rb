@@ -10,7 +10,7 @@ class PagesController < ApplicationController
   def brothers
     flash[:notice] = nil
     @values = []
-    Dir.new("#{Rails.root}/app/assets/images/version2").each do |entry|
+    Dir.new("#{Rails.root}/app/assets/images/Website Worthy").each do |entry|
       if not File.directory?(entry)
         @values.push(entry)
       end
